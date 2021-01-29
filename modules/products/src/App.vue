@@ -1,6 +1,6 @@
 <template>
-  <div class="mf-Container">
-    <h1>Products</h1>
+  <div class="module-products">
+    <router-view />
   </div>
 </template>
 
