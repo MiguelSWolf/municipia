@@ -12,4 +12,9 @@ export default new Vuex.Store({
   },
   actions: {
   },
+  getters: {
+    getProductById: (state) => (id) => {
+        return state.products.find(item => item.id === id);
+    }
+  }
 })
