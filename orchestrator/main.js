@@ -7,12 +7,12 @@ const apps = [
   {
     name: 'users',
     app: () => System.import('users'),
-    activeWhen: location => location.pathname.startsWith('/')
+    activeWhen: location => location.pathname.startsWith('/utilizadores')
   },
   {
     name: 'products',
     app: () => System.import('products'),
-    activeWhen: location => location.pathname.startsWith('/')
+    activeWhen: location => location.pathname.startsWith('/produtos')
   }
 ]
 
