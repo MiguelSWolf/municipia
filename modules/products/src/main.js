@@ -1,16 +1,21 @@
 import './set-public-path';
 import Vue from 'vue';
+import store from './store';
+import router from './router';
 import singleSpaVue from 'single-spa-vue';
+
 
 import App from './App.vue';
 
 Vue.config.productionTip = false;
 
-const containerSelector = '#module-products'
+const containerSelector = '#module-products';
 
 const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
+    store,
+    router,
     render: (h) => h(App),
     el: containerSelector
   },
