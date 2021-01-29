@@ -8,6 +8,10 @@ import singleSpaVue from 'single-spa-vue';
 import App from './App.vue';
 
 Vue.config.productionTip = false;
+Vue.filter('money', function (value) {
+  if (!value) return '-'
+  return value.toLocaleString('pt-pt',{style: 'currency', currency: 'EUR'});
+})
 
 const containerSelector = '#module-products';
 
