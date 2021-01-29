@@ -1,6 +1,6 @@
 <template>
-  <div class="mf-Container">
-    <h1>Users</h1>
+  <div class="module-users">
+    <router-view />
   </div>
 </template>
 

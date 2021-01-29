@@ -1,5 +1,7 @@
 import './set-public-path';
 import Vue from 'vue';
+import store from './store';
+import router from './router';
 import singleSpaVue from 'single-spa-vue';
 
 import App from './App.vue';
@@ -11,6 +13,8 @@ const containerSelector = '#module-users'
 const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
+    store,
+    router,
     render: (h) => h(App),
     el: containerSelector
   },

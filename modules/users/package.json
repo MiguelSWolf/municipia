@@ -11,7 +11,8 @@
     "core-js": "^3.6.4",
     "single-spa-vue": "^1.5.2",
     "systemjs-webpack-interop": "^1.1.0",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.3.0",
