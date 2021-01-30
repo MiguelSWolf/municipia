@@ -27,7 +27,8 @@ export default {
     props: ["id"],
     computed: {
         user: function() {
-            return this.$store.getters.getUserById(this.id);
+            const id = this.id || this.$root._data.ownerId;
+            return this.$store.getters.getUserById(id) || {};
         }
     },
     methods: {

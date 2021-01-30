@@ -6,7 +6,7 @@
                     <th>Modelo</th>
                     <th>Valor</th>
                     <th>Ano</th>
-                    <th>Ações</th>
+                    <th style="width: 120px">Ações</th>
                 </tr>
             </thead>
             <tfoot>
