@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import staticUsers from '@/data';
+import staticUsers from './data';
 
 Vue.use(Vuex);
 
