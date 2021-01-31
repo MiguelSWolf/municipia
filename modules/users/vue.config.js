@@ -8,9 +8,9 @@ module.exports = {
       'Access-Control-Allow-Origin': '*',
     });
     config.devServer.set('disableHostCheck', false);
-    config.devServer.set('sockPort', 8081);
+    config.devServer.set('sockPort', 8082);
     config.devServer.set('sockHost', 'localhost');
-    config.devServer.set('port', 8081);
+    config.devServer.set('port', 8082);
     config.devServer.set('inline', false);
     config.devServer.set('hot', true);
 

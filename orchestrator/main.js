@@ -6,6 +6,9 @@ import {
 const apps = [
   {
     name: 'users',
+    customProps: {
+      domElement: '#module-users',
+    },
     app: () => System.import('users'),
     activeWhen: location => location.pathname.startsWith('/utilizadores')
   },

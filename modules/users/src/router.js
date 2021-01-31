@@ -11,6 +11,7 @@ const routes = [
         { path: '/', name: 'UserList', component: UserList },
         { path: ':id', name: 'UserDetails', props: true, component: UserDetails },
     ] },
+    { path: '/produtos/:id', name: 'OwnerDetails', component: UserDetails },
 ]
 
 const router = new VueRouter({

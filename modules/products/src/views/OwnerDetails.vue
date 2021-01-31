@@ -18,7 +18,7 @@ export default {
                     domElement,
                     ownerId: this.ownerId
                 }
-                mountRootParcel(() => System.import("../../../users/src/parcel"), parcelProps)
+                mountRootParcel(() => window.System.import("users"), parcelProps)
             } catch(err) {
                 console.error(err);
             }

@@ -8,7 +8,7 @@ import App from './App.vue';
 
 Vue.config.productionTip = false;
 
-const containerSelector = '#module-users'
+// const containerSelector = '#module-users';
 
 const vueLifecycles = singleSpaVue({
   Vue,
@@ -16,7 +16,6 @@ const vueLifecycles = singleSpaVue({
     store,
     router,
     render: (h) => h(App),
-    el: containerSelector
   },
 });
 
@@ -27,7 +26,8 @@ export const unmount = vueLifecycles.unmount;
 export const devtools = {
   overlays: {
     selectors: [
-      containerSelector
+      "#module-users",
+      "#parcel"
     ],
   }
 };
