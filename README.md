@@ -80,16 +80,16 @@ Para executar o projeto é necessário correr os **três projetos simultaneament
 
     cd ./orchestrator
     
-    npm run install
+    npm run serve
 
 ### Products
 
     cd ./modules/products/
     
-    npm run install
+    npm run serve
     
 ### Users
 
     cd ./modules/users/
     
-    npm run install
+    npm run serve
