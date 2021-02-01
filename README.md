@@ -73,6 +73,9 @@ E após sua execução dos três APPs o orquestrador irá deixar todos os módul
 
 Para executar o projeto é necessário correr os **três projetos simultaneamente**, orchestrator, products e users com o comando `` npm run serve `` em suas respectivas pastas.
 
+**E após sua execução dos três APPs o orquestrador irá deixar todos os módulos disponíveis na url: (http://localhost:5000/)**
+
+
 ### Orchestrator
 
     cd ./orchestrator
