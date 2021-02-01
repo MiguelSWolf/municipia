@@ -37,6 +37,10 @@ Os projetos irão correr nas portas:
 
 Simultaneamente execute os três projetos orchestrator, products e users com o comando `` npm run serve `` em suas respectivas pastas
 
+
+
+## SOBRE O PROJETO
+
 ### Orchestrator (http://localhost:5000/main.js)
 
 O orquestrador é responsável por mapear as dependências e montar o modulo products e o modulo users quando necessários.
