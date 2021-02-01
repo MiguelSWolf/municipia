@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "orchestrator": "http://localhost:5000/main.js",
+    "products": "http://localhost:8083/app.js",
+    "users": "http://localhost:8082/app.js"
+  }
+}
