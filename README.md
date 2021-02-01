@@ -1,57 +1,92 @@
-# Municípia
+# Projeto Municípia
 
-Projeto utilizando micro-frontend.
 
-Para executar o projeto se faz necessário correr os três Apps simultaneamente (o **orquestrador** e os **dois módulos**).
+## SOBRE O PROJETO
 
-    
+Projeto desenvolvido usando a arquitetura de Micro Front-ends. 
+
+Sendo constituido por três apps:
+
+### Users Module 
+
+O módulo de utilizadores é um APP em VueJS correndo na porta 8082
+
+O módulo é constituido por duas páginas: 
+
+**Página de listagem**
+
+Listagem dos dados estáticos e link para detalhamento de cada utilizador. 
+
+**Pagina de detalhamento**
+
+Caixa com detalhamento do utilizador
+
+Está página é chamada em dois momentos, dentro do módulo de utilizadores e importada dentro do módulo de produtos para o detalhamento do dono do produto
+
+### Products Module 
+
+O módulo de produtos é um APP em VueJS correndo na porta 8083
+
+O módulo é constituido por duas páginas: 
+
+**Página de listagem**
+
+Listagem dos dados estáticos e link para detalhamento de cada produto. 
+
+**Pagina de detalhamento**
+
+Caixa com detalhamento do produto e importando um parcel (parcela do módulo de utilizadores) para exibir os dados do dono do produto
+
+
+### Orchestrator
+
+O orquestrador é responsável por mapear as dependências do projeto e montar os demais módulos em seus respectivos locais.
+
+O orquestrador é desenvolvido em Javascript e corre na porta 5000
+
+E após sua execução dos três APPs o orquestrador irá deixar todos os módulos disponíveis na url: (http://localhost:5000/)
+
 ## SETUP
+
+### Orchestrator
 
     cd ./orchestrator
     
     npm install
     
 
+### Products
 
     cd ./modules/products/
     
     npm install
     
 
+### Users
 
     cd ./modules/users/
     
     npm install
 
 
-
 ## CORRENDO O PROJETO
 
-Simultaneamente execute os três projetos orchestrator, products e users com o comando `` npm run serve `` em suas respectivas pastas
+Para executar o projeto é necessário correr os **três projetos simultaneamente**, orchestrator, products e users com o comando `` npm run serve `` em suas respectivas pastas.
 
+### Orchestrator
 
-
-## SOBRE O PROJETO
-
-Os apps irão correr nas portas: 
-
-    orchestrator: "http://localhost:5000/main.js"
+    cd ./orchestrator
     
-    products: "http://localhost:8083/app.js"
+    npm run install
+
+### Products
+
+    cd ./modules/products/
     
-    users: "http://localhost:8082/app.js"
-
-### Orchestrator (http://localhost:5000/main.js)
-
-O orquestrador é responsável por mapear as dependências e montar o módulo products e o módulo users quando necessários.
-
-### Products (http://localhost:8083/app.js)
+    npm run install
     
-O módulo de produtos está armazenado na pasta modules/products. 
-É um módulo com os componentes para a listagem dos produtos, e detalhe dos produtos
-Dentro do componente de detalhes tem a o Parcel para importar o módulo de usuários
-    
-### Users (http://localhost:8082/app.js)
+### Users
 
-O módulo de utilizadores está armazenado na pasta modules/users.
-É um módulo com os componentes para a listagem de utilizadores e as informações detalhadas sobre eles.
+    cd ./modules/users/
+    
+    npm run install
